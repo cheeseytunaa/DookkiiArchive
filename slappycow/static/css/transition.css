@@ -1,0 +1,36 @@
+:root {
+  --background-color: #0d6efd;
+}
+
+.transition-element-1 {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  background-size: cover;
+  left: 0px;
+  right: 0px;
+  bottom: -100%;
+}
+
+.transition-element-2 {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  background-size: cover;
+  left: 0px;
+  right: 0px;
+  bottom: -100%;
+}
+
+.navbar,
+.footer {
+  z-index: 10000;
+}
+
+body#onload {
+  background-color: var(--background-color) ! important;
+}
+
+div#content:not(#navbar):not(#footer) {
+  display: none ! important;
+}

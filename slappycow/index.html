@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlappyCow</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="static/css/scrollbar.css" rel="stylesheet">
+  <link href="static/css/callout.css" rel="stylesheet">
+  <link href="static/css/rgb.css" rel="stylesheet">
+  <link href="static/css/transition.css" rel="stylesheet">
+  <link href="static/css/stars.sass" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="static/img/favicons/favicon.ico">
+
+  <style>
+    #hero {
+      background: url("/static/assets/img/bg-2.png") no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #hero-box {
+      background: rgb(41, 41, 41, 0.7);
+      border-radius: 5px 30px 5px 30px;
+    }
+
+    #hero-img {
+      width: 70%;
+      height: 70%;
+      border-radius: 5px 30px 5px 30px;
+    }
+
+    body {
+      background-color: #2c2626;
+    }
+
+    section>div {
+      background-color: #FFF8F3;
+    }
+
+    section#info>div {
+      border-radius: 20px 20px 0 0;
+    }
+
+    section#ending>div {
+      border-radius: 0 0 20px 20px;
+    }
+  </style>
+</head>
+
+<body class="user-select-none" id="onload">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div class="content">
+    <div id="hero" class="vh-100">
+      <nav id="navbar_lol" class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center fixed-top">
+        <span class="navbar-brand ms-3 me-sm-auto bg-white px-2 rounded-3"><b class="rgb">Tunaa</b></span>
+        <div>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#general">General</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#guide">Guide</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#credits">Credits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#patches">Patches</a>
+            </li>
+        </div>
+      </nav>
+
+      <div class="container col-xxl-8 px-4 py-5 position-absolute top-50 start-50 translate-middle">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div data-aos="fade-left" class="col-10 col-sm-8 col-lg-6">
+            <img id="hero-img" src="static/assets/img/lmao.png" class="d-block mx-lg-auto img-fluid" draggable="false">
+          </div>
+          <div data-aos="fade-right" id="hero-box" class="col-lg-6 py-5">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">SlappyCow</h1>
+            <p class="lead text-white">A rip-off version of a Vietnamese game - Flappy Bird, by Dong Nguyen (Nguyễn Hà Đông).</p>
+            <p class="lead text-white">Umm, but also, this is the place where cows can fly UFOs, control them, drive through the obstacles and conquer the mother of cosmos.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a href="#download" class="text-decoration-none text-white">Download</a></button>
+              <button type="button" class="btn btn-outline-info btn-lg px-4"><a href="#general" class="text-decoration-none text-info">Learn more</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar_lol">
+      <section id="info" class="mt-5 mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <h2 id="general" class="text-center fw-bold">THE SLAPPYCOW HOMEPAGE</h2>
+          <p class="text-center mb-0">Scroll down for the download guide, how-to-play, credits and patch notes!</p>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p id="features" class="fs-3 fw-bold mb-3">How did we come up with this stupid idea?</p>
+                <p class="lead">As I have said, that sounds kinda fucking impossible. But for us, MKDC, we can easily nail down the game with some simple finger snaps.</p>
+                <p class="lead">With many epic features, simple and comfortable GUI, an idea about a game named "SlappyCow" has been come up with.</p>
+                <p class="lead">So, let’s get started.</p>
+              </div>
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <img src="static/assets/img/menu.png" class="img-fluid" draggable="false">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <img src="static/assets/img/config.png" class="img-fluid" draggable="false">
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p id="download" class="fs-3 fw-bold mb-3">What differences have we done so far?</p>
+                <p class="lead">This game was inspired by the OG one - Flappy Bird. We have upgraded the assets, been more creative in designing textures!</p>
+                <p class="lead">Btw, our character is special af. A cow which is able to fly an Unidentified Flying Object :)?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        [[[[[[[[[[]]]]]]]]]]
+        {{{{{{{}}}}}}}
+      </script>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p id="guide" class="fs-3 fw-bold mb-3">Download</p>
+                <p class="lead">There are several ways to download this game.</p>
+                <p class="lead">The most familiar way is from Google Drive (ye every1 should know that).</p>
+                <p class="lead">A more complicated way, but instead we could have the most stable version of the game is from GitHub.</p>
+                <button type="button" class="btn btn-success btn-lg px-4 me-md-2 disabled">Google Drive</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 disabled">GitHub</button>
+              </div>
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <img src="static/assets/img/download_platforms.png" class="img-fluid" draggable="false">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <img src="static/assets/img/gameplay-1.jpg" class="img-fluid" draggable="false">
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p id="credits" class="fs-3 fw-bold mb-3">How to play?</p>
+                <p class="lead">Simply just do left-click. An invisible force will help our cow fly up. (don't ask why)</p>
+                <p class="lead">Also there're some configurable properties, but I would love to explain those later =)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4 text-center">
+          <p id="patches" class="fs-3 fw-bold mb-3">Credits</p>
+          <table class="table table-striped table-hover table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Members</th>
+                <th scope="col">Role(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Nguyễn Đức Tuân</td>
+                <td>Game designer, Website developer</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Nguyễn Vân Anh</td>
+                <td>Graphic designer, Tester</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Nguyễn Hương Giang</td>
+                <td>Helper, Tester, Advertiser</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Vũ Minh Hà</td>
+                <td>Helper, Tester, Advertiser</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Nguyễn Thành Nam</td>
+                <td>Helper, Tester</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Đỗ Thị Ngọc Ánh</td>
+                <td>Helper, Tester</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Trần Ngọc Việt</td>
+                <td>Helper</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4 text-center">
+          <p class="fs-3 fw-bold mb-3">Patch notes</p>
+          <span class="lead">Hmmmmmmmmm, there are no notes here ._.</span>
+        </div>
+      </section>
+      <section id="ending" class="mb-5" data-aos="fade-up">
+        <div class="container py-5">
+          <h2 class="text-center fw-bold">That's it!</h2>
+          <p class="text-center mb-0">This website has not been completed yet! I will update it as soon as possible.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="static/js/jquery.waterwave.js"></script>
+  <script src="static/js/transition.js"></script>
+  <script src="static/js/init.js"></script>
+</body>
+
+</html>

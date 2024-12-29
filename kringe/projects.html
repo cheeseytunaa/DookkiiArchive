@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="static/css/scrollbar.css" rel="stylesheet" />
+    <link href="static/css/callout.css" rel="stylesheet" />
+    <link href="static/css/rgb.css" rel="stylesheet" />
+    <link href="static/css/transition.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="static/img/favicons/favicon.ico" />
+    <title>Projects</title>
+    <style>
+      body {
+        background-color: #548CFF;
+      }
+      section > div {
+        background-color: #dddddd;
+      }
+      section#info > div {
+        border-radius: 20px 20px 0 0;
+      }
+      section#ending > div {
+        border-radius: 0 0 20px 20px;
+      }
+    </style>
+  </head>
+  <body class="user-select-none" id="onload">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary d-flex justify-content-center">
+      <span class="navbar-brand ms-3 me-sm-auto bg-white px-2 rounded-3"><b class="rgb">Tunaa</b></span>
+      <div>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <button class="nav-link text-white" onclick="transition('index.html')">Home</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link bg-white text-primary">Projects</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-white">Contact</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content">
+      <section id="info" class="mt-5 mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <h2 class="text-center fw-bold">PROJECTS SHOWCASE</h2>
+          <p class="text-center mb-0">These are my projects which I have created (or attended to).</p>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p class="fs-3 fw-bold text-danger">PRIVATE PROJECT</p>
+                <p class="fs-3 fw-bold mb-3">Homophobic Discord Bot (Python)</p>
+                <p class="lead">This is used to make personal profile in Discord.</p>
+                <p class="lead">I made the bot for personal uses, but for somehow over 1200 developers have downloaded it :)</p>
+                <p class="lead">(due to some reasons, I had to change this project to private status)</p>
+                <button type="button" class="btn btn-danger btn-lg px-4 me-md-2 disabled">Download</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">Documentations</button>
+              </div>
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <img src="static/img/projects/homo.png" class="img-fluid" alt="Homophobic Bot - Feature Preview" draggable="false" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <img src="static/img/projects/yes.png" class="img-fluid" alt="Flapping Flapping - Slapping Slapping" draggable="false" />
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p class="fs-3 fw-bold text-success">ONGOING PROJECT</p>
+                <p class="fs-3 fw-bold mb-3">Slappy Bird (Unity)</p>
+                <p class="lead">A rip-off version of <b>Flappy Bird</b>.</p>
+                <p class="lead">Similar to the original one, but it is a sandbox, which has a lot of configurable properties.</p>
+                <button type="button" class="btn btn-success btn-lg px-4 me-md-2" onclick="transition('https://drive.google.com/file/d/1_GbVYpQ_MdmkBf3PG3aT_0nlTvQEr9n7/view?usp=sharing')">Download</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">How to config?</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="mb-1" data-aos="fade-up">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-6 text-center align-self-center">
+              <div class="text-center ms-4">
+                <p class="fs-3 fw-bold text-danger">CLOSED PROJECT</p>
+                <p class="fs-3 fw-bold mb-3">Hide And Seek Map (Minecraft)</p>
+                <p class="lead">A coop-able through LAN hide-and-seek minecraft map.</p>
+                <p class="lead">Based on the traditional children's game, the map also includes many epic features! (No plugins needed)</p>
+                <button type="button" class="btn btn-danger btn-lg px-4 disabled">Download</button>
+              </div>
+            </div>
+            <div class="col-6 text-center align-self-center">
+              <div id="hide-and-seek-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="static/img/projects/h&s-1.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The altar</h5>
+                      <p>Worshiping the people who made the map.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-2.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>1st-floor overview</h5>
+                      <p>The largest room of the pagoda.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-3.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bottom-view</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-4.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The wheat-house</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-5.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The bamboo forest</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-6.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Top-view</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="static/img/projects/h&s-7.png" class="d-block w-100" alt="Hide and Seek Minecraft Map" draggable="false" />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Peach trees</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hide-and-seek-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hide-and-seek-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ending" class="mb-5" data-aos="fade-up">
+        <div class="container py-5">
+          <h2 class="text-center fw-bold">That's it!</h2>
+          <p class="text-center mb-0">This list has not been completed yet! I will update it as soon as possible.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.waterwave.js"></script>
+    <script src="static/js/transition.js"></script>
+    <script src="static/js/init.js"></script>
+    <script>
+      $(document).ready(() => {
+        setTimeout(() => {
+          $("section").addClass("aos-animate");
+        }, 3500);
+      });
+    </script>
+  </body>
+</html>
